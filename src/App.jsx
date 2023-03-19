@@ -1,16 +1,18 @@
 import React from 'react'
-import { About, Contact, Experience, Footer, Header, Nav, Portfolio} from './components'
+import { About, Contact, Experience, Footer, Header, Nav, Portfolio } from './components'
 
 const App = () => {
   return (
     <>
-      <Header/>
-      <Nav/>
-      <About/>
-      <Experience/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+      <Header />
+      <Nav />
+      <main>
+        <About />
+        <Experience />
+        <Portfolio />
+        <Contact />
+      </main>
+      <Footer />
     </>
   )
 }
