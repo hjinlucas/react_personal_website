@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_personal_website/static/css/main.97a898ac.css",
+    "main.js": "/react_personal_website/static/js/main.f7a6d503.js",
+    "static/media/me_artsy_img_nobg.png": "/react_personal_website/static/media/me_artsy_img_nobg.34df789f8a4f4ef991a4.png",
+    "static/media/Hao_Jin_Resume.pdf": "/react_personal_website/static/media/Hao_Jin_Resume.429f99b08304a75eefc5.pdf",
+    "index.html": "/react_personal_website/index.html",
+    "main.97a898ac.css.map": "/react_personal_website/static/css/main.97a898ac.css.map",
+    "main.f7a6d503.js.map": "/react_personal_website/static/js/main.f7a6d503.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97a898ac.css",
+    "static/js/main.f7a6d503.js"
+  ]
+}
