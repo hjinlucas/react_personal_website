@@ -75,6 +75,21 @@
       font-size: 1.5rem;
       margin-right: 0.5rem;
     }
+
+    /* ================= Media Queries (Medium Devices) ================= */
+    @media screen and (max-width: 1024px) {
+        .about-image{
+            display: none;
+           }
+    }
+
+    /* ================= Media Queries (Small Devices) ================= */
+    @media screen and (max-width: 600px) {
+       .about-image{
+        display: none;
+       }
+        
+    }
     
   }
   
