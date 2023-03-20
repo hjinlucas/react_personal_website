@@ -75,6 +75,7 @@
   .experience-card-hover-content {
     text-align: center;
     color: var(--white);
+    padding: 1rem 1rem 1rem 1rem; 
   }
   
   .experience-card-hover-content h3 {
