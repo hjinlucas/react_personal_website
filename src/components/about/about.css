@@ -16,12 +16,15 @@
   }
   
   .about-image {
+    background: linear-gradient(var(--color-primary), transparent);
     width: 30%;
     float: left;
     text-align: center;
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    border-radius: 6rem 6rem 6rem 6rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem; 
   }
   
   .about-image img {
