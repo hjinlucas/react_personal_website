@@ -1,11 +1,11 @@
 import React, { useState }  from 'react'
 import './experience.css'
-import Image1 from '../../assets/testImage.png'
-import Image2 from '../../assets/testImage.png'
+import Image1 from '../../assets/testImage2.png'
+import Image2 from '../../assets/testImage2.png'
 import { FaWalking, FaSnowflake } from 'react-icons/fa';
 
 
-const Option = ({ backgroundUrl, iconClass, mainText, subText, isActive, onClick }) => (
+const Option = ({ backgroundUrl, iconComponent, mainText, subText, isActive, onClick }) => (
   <div
     className={`option ${isActive ? 'active' : ''}`}
     style={{ '--optionBackground': `url(${backgroundUrl})` }}

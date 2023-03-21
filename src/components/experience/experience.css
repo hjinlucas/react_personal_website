@@ -1,6 +1,7 @@
 #experience {
-  background: var(--color-bg-variant);
-  padding: 10rem 0;
+  background: var(--color-bg);
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .hr-line {
