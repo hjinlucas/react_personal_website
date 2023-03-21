@@ -1,10 +1,122 @@
-#experince {
+#experience {
   background: var(--color-bg-variant);
-  padding: 1rem 0;
+  padding: 10rem 0;
 }
 
-.experince__container{
-  text-align: left;
-  height: 100%;
+.hr-line {
+  border: 1px solid var(--color-primary);
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  overflow: hidden;
+  min-width: 600px;
+  max-width: 900px;
+  width: calc(100% - 100px);
+  height: 400px;
+}
+
+.option {
   position: relative;
+  overflow: hidden;
+  min-width: 60px;
+  margin: 10px;
+  background-image: var(--optionBackground, var(--defaultBackground, #E6E9ED));
+  background-size: auto 120%;
+  background-position: center;
+  cursor: pointer;
+  transition: flex-grow 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), background-size .5s, background-position .5s, margin 0.5s;
+  border-radius: 30px;
+}
+
+.option.active {
+  flex-grow: 10000;
+  transform: scale(1);
+  max-width: 600px;
+  margin: 0px;
+  border-radius: 40px;
+  background-size: auto 100%;
+  transition: flex-grow 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95), background-size .5s, background-position .5s, margin 0.5s;
+}
+
+
+.option .shadow {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 120px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.option .label {
+  display: flex;
+  position: absolute;
+  right: 0px;
+  height: 40px;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-white);
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0 10px;
+  border-radius: 20px;
+  background: var(--color-primary);
+}
+
+.option.active .label {
+  opacity: 0;
+}
+
+.option .icon {
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+  font-size: 3rem;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+  color: var(--color-white);
+}
+
+.option.active .icon {
+  opacity: 0;
+}
+
+.option .main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.option.active .main {
+  opacity: 1;
+}
+
+.option .sub {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--color-white);
+  transition: 0.5s cubic-bezier(0.05, 0.61, 0.41, 0.95);
+}
+
+.option.active .sub {
+  opacity: 0;
 }

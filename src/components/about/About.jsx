@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
 import { FaJava, FaJs, FaReact, FaPython } from 'react-icons/fa';
-import profilePhoto from '../../assets/me_artsy_img_nobg.png';
+import profilePhoto from '../../assets/profile-pic-3.png';
 
 const About = () => {
   return (
