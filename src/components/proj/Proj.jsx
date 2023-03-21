@@ -9,6 +9,7 @@ const Proj = () => {
           <h2>3. Projects</h2>
           <hr className='hr-line' />
 
+          <div className='cards-wrapper'>
           <div className='card'>
             <div className='visual'>
               <img src='https://via.placeholder.com/240x240' alt='' />
@@ -41,7 +42,7 @@ const Proj = () => {
               <a href='# '>View Project</a>
             </div>
           </div>
-
+          </div>
         </div>
       </div>
     </section>

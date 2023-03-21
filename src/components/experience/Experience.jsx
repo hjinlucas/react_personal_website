@@ -58,6 +58,7 @@ const Experience = () => {
         <h2>2. Experience</h2>
         <hr className='hr-line' />
 
+        <div className="experience-wrapper">
         <div className="options">
             {experiences.map((exp, index) => (
               <Option
@@ -71,7 +72,7 @@ const Experience = () => {
               />
             ))}
           </div>
-
+          </div>
       </div>
       </div>
     </section>
