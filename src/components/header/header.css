@@ -1,5 +1,4 @@
 header{
-    height: 100vh;
     padding-top:  7rem;
     overflow: hidden;
 }
@@ -24,9 +23,10 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
+    position: fixed;
+    left: 20px; /* Changed from 0 to 20px for spacing */
     bottom: 3rem;
+    z-index: 1000;
 }
 
 .header__contact::after{
@@ -38,19 +38,20 @@ header{
 
 
 /* ================= Scroll Down ================= */
-.scroll__down{
-    position: absolute;
-    right: -2.3rem;
+/* .scroll__down{
+    position: fixed;
+    right: 20px;
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
     font-size: 1rem;
-}
+    z-index: 1000;
+} */
 
 /* ================= Media Queries (Medium Devices) ================= */
 @media screen and (max-width: 1024px) {
     header{
-        height: 68vh;
+
     }
     /* check the container area
     .container{
@@ -59,7 +60,7 @@ header{
 }
 
 /* ================= Media Queries (Small Devices) ================= */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 
     .header__contact,
     .scroll__down{

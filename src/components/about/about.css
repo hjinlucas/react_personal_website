@@ -1,6 +1,6 @@
 #about {
     background: var(--color-bg-variant);
-    padding: 10rem 0;
+    padding: 1rem 0;
   }
   
   .hr-line {
@@ -57,7 +57,20 @@
     margin-right: 0;
   }
   
-  @media screen and (max-width: 768px) {
+  /* ================= Media Queries (Medium Devices) ================= */
+  @media screen and (max-width: 1024px) {
+    .about-content, .about-image {
+      width: 100%;
+      float: none;
+    }
+
+    .about-image {
+      margin-top: 2rem;
+      display: none;
+    }
+  }
+  /* ================= Media Queries (Small Devices) ================= */
+  @media screen and (max-width: 600px) {
     .about-content, .about-image {
       width: 100%;
       float: none;
@@ -74,21 +87,6 @@
     .tech-icon {
       font-size: 1.5rem;
       margin-right: 0.5rem;
-    }
-
-    /* ================= Media Queries (Medium Devices) ================= */
-    @media screen and (max-width: 1024px) {
-        .about-image{
-            display: none;
-           }
-    }
-
-    /* ================= Media Queries (Small Devices) ================= */
-    @media screen and (max-width: 600px) {
-       .about-image{
-        display: none;
-       }
-        
     }
     
   }
