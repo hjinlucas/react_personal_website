@@ -16,7 +16,6 @@ const Option = ({ backgroundUrl, iconComponent, mainText, subText, isActive, onC
       </div>
     <div className="main">{mainText}</div>
     <div className="sub">{subText}</div>
-    <div className="label">Click to expand</div>
   </div>
 );
 
@@ -28,6 +27,18 @@ const Experience = () => {
       backgroundUrl: Image1,
       iconComponent: FaWalking,
       mainText: 'Blonkisoaz',
+      subText: 'Omuke trughte a otufta',
+    },
+    {
+      backgroundUrl: Image2,
+      iconComponent: FaSnowflake,
+      mainText: 'Oretemauw',
+      subText: 'Omuke trughte a otufta',
+    },
+    {
+      backgroundUrl: Image2,
+      iconComponent: FaSnowflake,
+      mainText: 'Oretemauw',
       subText: 'Omuke trughte a otufta',
     },
     {
