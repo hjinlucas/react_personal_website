@@ -1,4 +1,4 @@
-#contact {
+#proj {
     background: var(--color-bg-variant);
     padding: 10rem 0;
   }
@@ -8,9 +8,10 @@
     width: 80%;
     margin: 2rem auto;
   }
-  
-  .contact-content {
+
+  .proj-content {
     width: 67%;
     float: left;
     margin-right: 3%;
   }
+  

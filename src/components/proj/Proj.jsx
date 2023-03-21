@@ -1,18 +1,19 @@
 import React from 'react'
-import './contact.css'
+import './proj.css' 
 
-const Contact = () => {
+const Proj = () => {
   return (
-    <section id='contact'>
+    <section id='about'>
         <div className='container'>
-        <div className='contact-content'>
-            <h2>4. Contact</h2>
+        <div className='proj-content'>
+            <h2>3. Projects</h2>
             <hr className='hr-line' />
         
         </div>
         </div>
     </section>
+          
   )
 }
 
-export default Contact
+export default Proj;
