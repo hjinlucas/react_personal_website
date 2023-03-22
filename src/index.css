@@ -11,10 +11,10 @@
 }
 
 :root {
-    --color-bg: #37306B; /* dark grey background */
-    --color-bg-variant: #37306B; /* slightly lighter background */
-    --color-primary: #9E4784; /* cyberpunk green */
-    --color-primary-variant: #D27685; /* lighter variant of cyberpunk green */
+    --color-bg: #37306B;
+    --color-bg-variant: #37306B; 
+    --color-primary: #9E4784;
+    --color-primary-variant: #D27685; 
     --color-white: #ffffff; /* white color */
     --color-light: rgba(255, 255, 255, 0.6); /* light grey color */
 

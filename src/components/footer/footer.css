@@ -1,0 +1,26 @@
+#footer {
+    background: var(--color-bg-variant);
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom:10rem;
+  }
+  
+  #footer p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-light);
+  }
+  
+  #footer a {
+    color: var(--color-primary);
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #footer a:hover {
+    color: var(--color-primary-variant);
+  }
+  
