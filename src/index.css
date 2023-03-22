@@ -14,9 +14,23 @@
     --color-bg: #37306B;
     --color-bg-variant: #37306B; 
     --color-primary: #9E4784;
-    --color-primary-variant: #D27685; 
+    --color-primary-variant: #D27685;  
+
+
+    /* --color-bg: #539165 ;
+    --color-bg-variant: #3F497F ;
+    --color-primary: #F7C04A ; 
+    --color-primary-variant: #F8F5E4 ; 
+    green & yellow*/
+
+    /* --color-bg: #3F3B6C;
+    --color-bg-variant: #624F82 ;
+    --color-primary: #9F73AB ; 
+    --color-primary-variant: #A3C7D6 ; */
+
     --color-white: #ffffff; /* white color */
     --color-light: rgba(255, 255, 255, 0.6); /* light grey color */
+    --color-black: #171717;
 
     --transition: all 400ms ease;
 

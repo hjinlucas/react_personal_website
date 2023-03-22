@@ -9,7 +9,7 @@ import { AiFillGithub } from 'react-icons/ai';
 
 const Proj = () => {
   return (
-    <section id='projects'>
+    <section id='proj'>
       <div className='container'>
         <div className='proj-content'>
           <h2>3. Projects</h2>
