@@ -127,3 +127,24 @@
 .option.active .sub {
   opacity: 0;
 }
+
+.icon-container {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+}
+
+.circle-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+}
+
+.icon-small {
+  color: var(--color-white);
+  font-size: 1.5rem;
+}

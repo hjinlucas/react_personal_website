@@ -1,21 +1,27 @@
 import React, { useState }  from 'react'
 import './experience.css'
-import Image1 from '../../assets/testImage2.png'
-import Image2 from '../../assets/testImage2.png'
-import { FaWalking, FaSnowflake } from 'react-icons/fa';
+import Image1 from '../../assets/cardImage1.jpg'
+import Image2 from '../../assets/cardImage2.jpg'
+import Image3 from '../../assets/cardImage3.png'
+import Image4 from '../../assets/cardImage4.jpg'
+import { IoLogoJavascript } from 'react-icons/io';
+import { FaPython, FaJava } from 'react-icons/fa';
 
 
-const Option = ({ backgroundUrl, iconComponent, mainText, subText, isActive, onClick }) => (
+const Option = ({ backgroundUrl, mainText, isActive, onClick, smallIcon: SmallIcon }) => (
   <div
     className={`option ${isActive ? 'active' : ''}`}
     style={{ '--optionBackground': `url(${backgroundUrl})` }}
     onClick={onClick}
   >
-    <div className="icon">
-        <iconComponent />
+
+    <div className="icon-container">
+      <div className="circle-background">
+        <SmallIcon className="icon-small" />
       </div>
+    </div>
+
     <div className="main">{mainText}</div>
-    <div className="sub">{subText}</div>
   </div>
 );
 
@@ -25,27 +31,23 @@ const Experience = () => {
   const experiences = [
     {
       backgroundUrl: Image1,
-      iconComponent: FaWalking,
-      mainText: 'Blonkisoaz',
-      subText: 'Omuke trughte a otufta',
+      mainText: 'Kean University - Wenzhou',
+      smallIcon: IoLogoJavascript,
     },
     {
       backgroundUrl: Image2,
-      iconComponent: FaSnowflake,
-      mainText: 'Oretemauw',
-      subText: 'Omuke trughte a otufta',
+      mainText: 'Full Harvest Asset Management',
+      smallIcon: FaPython,
     },
     {
-      backgroundUrl: Image2,
-      iconComponent: FaSnowflake,
-      mainText: 'Oretemauw',
-      subText: 'Omuke trughte a otufta',
+      backgroundUrl: Image3,
+      mainText: 'Youyou Sports',
+      smallIcon: FaJava,
     },
     {
-      backgroundUrl: Image2,
-      iconComponent: FaSnowflake,
-      mainText: 'Oretemauw',
-      subText: 'Omuke trughte a otufta',
+      backgroundUrl: Image4,
+      mainText: 'Chuancheng',
+      smallIcon: FaPython,
     },
     // Add more experiences here as needed
   ];
@@ -64,9 +66,8 @@ const Experience = () => {
               <Option
                 key={index}
                 backgroundUrl={exp.backgroundUrl}
-                iconComponent={exp.iconComponent}
+                smallIcon={exp.smallIcon}
                 mainText={exp.mainText}
-                subText={exp.subText}
                 isActive={activeOption === index}
                 onClick={() => setActiveOption(index)}
               />
