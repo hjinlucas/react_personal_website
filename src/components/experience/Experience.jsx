@@ -8,7 +8,7 @@ import { IoLogoJavascript } from 'react-icons/io';
 import { FaPython, FaJava } from 'react-icons/fa';
 
 
-const Option = ({ backgroundUrl, mainText, isActive, onClick, smallIcon: SmallIcon }) => (
+const Option = ({ backgroundUrl, mainText, isActive, onClick, smallIcon: SmallIcon, details }) => (
   <div
     className={`option ${isActive ? 'active' : ''}`}
     style={{ '--optionBackground': `url(${backgroundUrl})` }}
@@ -22,6 +22,7 @@ const Option = ({ backgroundUrl, mainText, isActive, onClick, smallIcon: SmallIc
     </div>
 
     <div className="main">{mainText}</div>
+    <div className="details">{details}</div>
   </div>
 );
 
@@ -33,6 +34,7 @@ const Experience = () => {
       backgroundUrl: Image1,
       mainText: 'Kean University - Wenzhou',
       smallIcon: IoLogoJavascript,
+      details: 'test'
     },
     {
       backgroundUrl: Image2,
@@ -52,6 +54,8 @@ const Experience = () => {
     // Add more experiences here as needed
   ];
 
+
+  const activeExperience = experiences[activeOption];
 
   return (
     <section id='experience'>
@@ -73,7 +77,16 @@ const Experience = () => {
               />
             ))}
           </div>
+          {activeExperience && (
+          <div className="details-container">
+          <div className="details">
+                <h3>{activeExperience.mainText}</h3>
+                <p>{activeExperience.details}</p>
+            </div>
           </div>
+                )}
+          </div>
+          
       </div>
       </div>
     </section>
