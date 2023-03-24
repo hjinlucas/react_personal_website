@@ -89,7 +89,7 @@ const Experience = () => {
                 key={index}
                 backgroundUrl={exp.backgroundUrl}
                 smallIcon={exp.smallIcon}
-                mainText={exp.mainText}
+                
                 isActive={activeOption === index}
                 onClick={() => setActiveOption(index)}
               />
