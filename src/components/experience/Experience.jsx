@@ -32,24 +32,42 @@ const Experience = () => {
   const experiences = [
     {
       backgroundUrl: Image1,
-      mainText: 'Kean University - Wenzhou',
+      mainText: 'Kean University Wenzhou - Tech Assistant',
       smallIcon: IoLogoJavascript,
-      details: 'test'
+      details: [
+        "> Constructed an internal website for university's polytechnic labs operating HTML, CSS, JavaScript, resulting in a 30% increase in lab usage and a nearly 30% reduction in wait time.",
+        "> Constructed an internal website for university's polytechnic labs operating HTML, CSS, JavaScript, resulting in a 30% increase in lab usage and a nearly 30% reduction in wait time.",
+        "> Coordinated with external IOT companies to perform large-scale IOT systems for university's labs."
+      ]
     },
     {
       backgroundUrl: Image2,
-      mainText: 'Full Harvest Asset Management',
+      mainText: 'Full Harvest Asset Management - Data Analyst Intern',
       smallIcon: FaPython,
+      details: [
+        "> Conducted analysis of investment portfolios and buy-sell strategies using Python and statistical modeling techniques.",
+        "> Developed a new strategy for analyzing investment performance that was adopted by the company after modification.",
+        "> Developed a new strategy for analyzing investment performance that was adopted by the company after modification."
+      ]
     },
     {
       backgroundUrl: Image3,
-      mainText: 'Youyou Sports',
+      mainText: 'Youyou Sports - Software Engineering Intern',
       smallIcon: FaJava,
+      details: [
+        "> Developed a WeChat app using Java, HTML and CSS, resulting in a 30% increase in deal closing.",
+        "> Accomplished key features such as product browsing, content display, and in-app chat functionality.",
+        "> Associated with backend team to integrate databases, and to ensure a seamless user experience."
+      ]
     },
     {
       backgroundUrl: Image4,
       mainText: 'Chuancheng',
       smallIcon: FaPython,
+      details: [
+        "> Analyzed the operating conditions of competitors in different business districts.",
+        "> Improved the operation strategy of stores in the same business district."
+      ]
     },
     // Add more experiences here as needed
   ];
@@ -77,17 +95,24 @@ const Experience = () => {
               />
             ))}
           </div>
+          </div>
+          {/* details of experience cards */}
+          <div className="details-wrapper">
           {activeExperience && (
-          <div className="details-container">
-          <div className="details">
-                <h3>{activeExperience.mainText}</h3>
-                <p>{activeExperience.details}</p>
+            <div className="details-container">
+            <div className="details">
+              <h3>{activeExperience.mainText}</h3>
+              {activeExperience.details.map((line, index) => (
+                    <p key={index}>{line}</p>
+                    ))}
+              </div>
             </div>
+           )}
           </div>
-                )}
-          </div>
-          
+            
       </div>
+
+          
       </div>
     </section>
   )

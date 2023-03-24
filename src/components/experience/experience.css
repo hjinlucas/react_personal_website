@@ -40,6 +40,9 @@
   border-radius: 30px;
 }
 
+.details p {
+  margin-bottom: 3rem;
+}
 
 
 .option.active {
@@ -113,6 +116,12 @@
   margin: 0;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+.details-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 
